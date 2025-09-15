@@ -1,0 +1,4 @@
+TimeCreated,Id,LevelDisplayName,ProviderName,Message
+2025-09-14 10:01:00,4625,Error,Microsoft-Windows-Security-Auditing,"An account failed to log on. Source Network Address: 192.168.1.50"
+2025-09-14 10:01:20,4625,Error,Microsoft-Windows-Security-Auditing,"An account failed to log on. Source Network Address: 192.168.1.50"
+2025-09-14 10:01:40,4625,Error,Microsoft-Windows-Security-Auditing,"An account failed to log on. Source Network Address: 192.168.1.50"
