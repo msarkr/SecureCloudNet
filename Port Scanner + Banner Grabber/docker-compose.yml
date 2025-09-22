@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"        # visit http://127.0.0.1:8080 ; script sends HEAD to grab headers
+
+  sftp:
+    image: atmoz/sftp
+    command: user:password:1001
+    ports:
+      - "2222:22"        # SSH banner on connect
+
+  ftp:
+    image: fauria/vsftpd
+    environment:
+      - FTP_USER=user
+      - FTP_PASS=password
+      - PASV_ADDRESS=127.0.0.1
+      - LOG_STDOUT=Yes
+    ports:
+      - "2121:21"        # FTP banner (220 ...)
+      - "21100-21110:21100-21110"
