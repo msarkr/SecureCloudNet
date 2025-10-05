@@ -1,5 +1,3 @@
-Simple BMP RE Challenge — quick plaintext README
-
 What it is
 A tiny demo that generates a 24-bit BMP and injects a short ASCII secret into the pixel bytes (not visible in an image viewer).
 
