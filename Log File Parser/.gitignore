@@ -1,0 +1,9 @@
+# build artifacts
+log_parser
+*.o
+*.obj
+*.exe
+
+# OS cruft
+.DS_Store
+Thumbs.db
