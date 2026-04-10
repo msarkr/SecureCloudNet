@@ -1,0 +1,15 @@
+---
+timezone: "UTC"
+
+web_pkg: "nginx"
+web_port: 80
+site_title: "Ansible Mini Lab"
+site_message: "Hello from Ansible on web01!"
+
+postgresql_version: "14"
+postgresql_packages:
+  - "postgresql"
+  - "postgresql-contrib"
+db_name: "labdb"
+db_user: "labuser"
+db_password: "labpass"

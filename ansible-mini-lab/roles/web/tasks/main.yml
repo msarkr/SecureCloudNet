@@ -1,0 +1,26 @@
+---
+- name: Install Nginx
+  apt:
+    name: "{{ web_pkg }}"
+    state: present
+    update_cache: true
+  notify: restart nginx
+
+- name: Allow HTTP through UFW
+  ufw:
+    rule: allow
+    port: "{{ web_port }}"
+    proto: tcp
+
+- name: Deploy templated homepage
+  template:
+    src: "index.html.j2"
+    dest: "/var/www/html/index.html"
+    mode: "0644"
+  notify: reload nginx
+
+- name: Ensure Nginx is enabled and running
+  service:
+    name: nginx
+    state: started
+    enabled: true

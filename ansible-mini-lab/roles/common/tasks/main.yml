@@ -1,0 +1,20 @@
+---
+- name: Ensure base packages are present
+  apt:
+    name:
+      - vim
+      - curl
+      - git
+      - ufw
+      - tzdata
+    update_cache: true
+    state: present
+
+- name: Set timezone
+  timezone:
+    name: "{{ timezone }}"
+
+- name: Enable uncomplicated firewall (UFW)
+  ufw:
+    state: enabled
+    policy: allow

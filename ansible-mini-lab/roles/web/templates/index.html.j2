@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site_title }}</title>
+  </head>
+  <body style="font-family: system-ui; margin: 2rem;">
+    <h1>{{ site_title }}</h1>
+    <p>{{ site_message }}</p>
+    <p>Deployed via <strong>Ansible</strong> on {{ ansible_hostname }} ({{ ansible_default_ipv4.address }})</p>
+  </body>
+</html>
