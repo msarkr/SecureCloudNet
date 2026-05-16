@@ -1,0 +1,13 @@
+2026-05-10 14:36:38,642 - INFO - Master password created.
+2026-05-10 14:36:42,444 - INFO - Successful login.
+2026-05-10 14:36:57,225 - INFO - Credential added for account: gmail
+2026-05-10 14:36:59,994 - INFO - Credentials viewed.
+2026-05-10 14:37:24,234 - INFO - Credential added for account: cpp
+2026-05-10 14:37:27,526 - INFO - Credentials viewed.
+2026-05-10 14:37:36,208 - INFO - Credential deleted for account: gmail
+2026-05-10 14:37:38,825 - INFO - Credentials viewed.
+2026-05-10 14:37:45,252 - INFO - User exited application.
+2026-05-10 14:37:56,096 - WARNING - Failed login attempt.
+2026-05-10 14:37:59,037 - WARNING - Failed login attempt.
+2026-05-10 14:38:01,045 - WARNING - Failed login attempt.
+2026-05-10 14:38:01,045 - WARNING - Application locked after 3 failed login attempts.
